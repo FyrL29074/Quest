@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Quest"
 include(":app")
+include(":network")
+include(":storage")
+include(":feature-projects")

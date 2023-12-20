@@ -1,4 +1,4 @@
-package com.fyrl29074.quest.app
+package com.fyrl29074.quest
 
 import android.app.Application
 
