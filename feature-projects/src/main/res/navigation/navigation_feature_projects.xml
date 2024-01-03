@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_feature_projects"
+    app:startDestination="@id/fragment_projects">
+
+    <fragment
+        android:id="@+id/fragment_projects"
+        android:name="com.fyrl29074.feature_projects.presentation.ProjectsFragment"
+        android:label="fragmentProjects"
+        tools:layout="@layout/fragment_projects" />
+
+</navigation>

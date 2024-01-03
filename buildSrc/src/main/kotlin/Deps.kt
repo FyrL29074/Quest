@@ -9,11 +9,15 @@ object Deps {
     }
 
     object Koin {
-        val koin_android = "io.insert-koin:koin-android:${Versions.Koin.koin_android_version}"
+        const val koin_android = "io.insert-koin:koin-android:${Versions.Koin.koin_android_version}"
     }
 
     object AndroidX {
-        val app_compat = "androidx.appcompat:appcompat:${Versions.AndroidX.app_compat_version}"
-        val core_ktx = "androidx.core:core-ktx:${Versions.AndroidX.android_core_version}"
+        const val app_compat = "androidx.appcompat:appcompat:${Versions.AndroidX.app_compat_version}"
+        const val core_ktx = "androidx.core:core-ktx:${Versions.AndroidX.android_core_version}"
+    }
+
+    object Coroutines {
+        const val coroutines_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Coroutines.coroutines_version}"
     }
 }

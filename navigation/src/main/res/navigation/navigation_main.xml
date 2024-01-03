@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/navigation_feature_projects">
+
+    <include app:graph="@navigation/navigation_feature_projects" />
+    <include app:graph="@navigation/navigation_feature_tasks" />
+
+    <action
+        android:id="@+id/toFeatureProjects"
+        app:destination="@id/navigation_feature_projects" />
+
+    <action
+        android:id="@+id/toFeatureTasks"
+        app:destination="@id/navigation_feature_tasks" />
+</navigation>

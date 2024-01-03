@@ -43,20 +43,22 @@ android {
 
 dependencies {
 
-
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
-
-    // Kotlin Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    // Feature modules
-    implementation(project(":feature-projects"))
-
-    // Koin
+    implementation(Deps.AndroidX.core_ktx)
     implementation(Deps.AndroidX.app_compat)
+    implementation("com.google.android.material:material:1.11.0")
+
+    implementation(Deps.NavComponent.nav_ui_ktx)
+    implementation(Deps.NavComponent.nav_fragment_ktx)
+
+    implementation(Deps.Coroutines.coroutines_android)
+
+    implementation(Deps.AndroidX.app_compat)
+
+    implementation(Deps.Koin.koin_android)
+
+    implementation(project(":navigation"))
+
+    // Features
+    implementation(project(":feature-projects"))
+    implementation(project(":feature-tasks"))
 }

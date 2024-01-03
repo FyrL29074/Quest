@@ -16,4 +16,8 @@ object Versions {
         const val android_core_version = "1.12.0"
     }
 
+    object Coroutines {
+        const val coroutines_version = "1.7.3"
+    }
+
 }

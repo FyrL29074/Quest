@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fyrl29074.feature_projects"
+    namespace = "com.fyrl29074.navigation"
     compileSdk = 34
 
     defaultConfig {
@@ -30,19 +30,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
-    implementation(Deps.AndroidX.core_ktx)
-    implementation(Deps.AndroidX.app_compat)
-
-    implementation(Deps.NavComponent.nav_ui_ktx)
     implementation(Deps.NavComponent.nav_fragment_ktx)
-
-    implementation(Deps.Koin.koin_android)
-
-    implementation(project(":navigation"))
+    implementation(Deps.NavComponent.nav_ui_ktx)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 }
